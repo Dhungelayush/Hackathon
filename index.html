@@ -1,93 +1,310 @@
+<!--ODYSSEY-->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>PartTimer</title>
-  <link rel="stylesheet" href="index.css">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HireHub - Connect with Part-Time Talent</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
+    <!-- NAVABAR -->
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Hire<span>Hub</span></a>
+                <ul class="nav-links">
+                 
+                    <li><a href="index.html">HOME</a></li>
+                    <li><a href="jobs.html">HIRE TALENT</a></li>
+                    <li><a href="how-it-works.html">HOW IT WORKS</a></li>
+                    <li><a href="about.html">ABOUT US</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="login-btn">Login</a>
+                    <a href="signup.html" class="btn">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- NAVABAR END -->
 
-  <!-- Navbar -->
-  <nav>
-    <div class="logo">PartTimer</div>
-    <div class="nav-links">
-      <a href="#jobs">Find Jobs</a>
-      <a href="#jobbers">Find Jobbers</a>
-      <a href="#post">Post a Job</a>
-      <a href="#how">How it Works</a>
-      <a href="#about">About</a>
+    <!-- Headline Section -->
+    <section class="Headline">
+        <div class="container">
+            <div class="head-content">
+                <div class="head-text">
+                    <h1>Connect with <em>HireHub</em> Talent</h1>
+                    <p>The premier platform for discovering exceptional part-time job seekers and flexible opportunities. Build your dream team with skilled professionals ready to work on your schedule.</p>
+                    <div class="head-buttons">
+                        <a href="#jobber-form" class="btn">Find Part-Time Talent</a>
+                        <a href="signup.html" class="btn btn-accent">Sign Up Now</a>
+                    </div>
+                </div>
+                <div class="head-image">
+                    <img src="https://images.unsplash.com/photo-1570126618953-d437176e8c79?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=794&q=80" alt="Team collaboration">
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Headline Section End -->
+
+    <!-- How It Works -->
+    <section class="how-it-works" id="how-it-works">
+        <div class="container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple steps to find the perfect part-time match for your business needs</p>
+            
+            <div class="steps">
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-user-plus"></i>
+                    </div>
+                    <h3>Create Your Profile</h3>
+                    <p>Sign up as a job seeker or client and build your profile with skills, experience, and requirements.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>Search & Connect</h3>
+                    <p>Find perfect matches based on location, skills, and availability. Connect with potential partners.</p>
+                </div>
+                
+                <div class="step">
+                    <div class="step-icon">
+                        <i class="fas fa-handshake"></i>
+                    </div>
+                    <h3>Start Working</h3>
+                    <p>Agree on terms, begin your project, and manage everything through our secure platform.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Job Listings -->
+    <section class="job-listings" id="job-listings">
+        <div class="container">
+            <h2 class="section-title">Find Local Talent</h2>
+            <p class="section-subtitle">Browse through skilled part-time professionals in your area</p>
+            
+            <div class="search-box">
+                <div class="search-form">
+                    <input type="text" placeholder="Search by skill or keyword..." id="search-input">
+                    <input type="text" placeholder="Enter your location..." id="location-input">
+                    <button class="btn" id="search-btn">Search</button>
+                </div>
+            </div>
+            
+            <div class="job-cards" id="job-cards-container">
+                <!-- Sample job cards for demonstration -->
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <h3>Sarah Johnson</h3>
+                        <p>Web Design, Graphic Design, UI/UX</p>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kathmandu</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Part-time</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-star"></i>
+                            <span>Creative designer with 5+ years of experience</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <div class="price">RS.2.5K/hr</div>
+                        <button class="btn request-btn">Request</button>
+                    </div>
+                </div>
+                
+                <div class="job-card">
+                    <div class="job-card-header">
+                        <h3>Raj Sharma</h3>
+                        <p>JavaScript, React, Node.js</p>
+                    </div>
+                    <div class="job-card-body">
+                        <div class="job-detail">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Kathmandu</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-clock"></i>
+                            <span>Full-time</span>
+                        </div>
+                        <div class="job-detail">
+                            <i class="fas fa-star"></i>
+                            <span>Full-stack developer specializing in modern JavaScript applications</span>
+                        </div>
+                    </div>
+                    <div class="job-card-footer">
+                        <div class="price">RS.3K/hr</div>
+                        <button class="btn request-btn">Request</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Signup Forms
+    <section class="signup-forms" id="jobber-form">
+        <div class="container">
+            <h2 class="section-title">Join HireHub</h2>
+            <p class="section-subtitle">Choose your role and create your profile to get started</p>
+            
+            <div class="form-tabs">
+                <div class="form-tab active" data-tab="jobseeker">I'm a Job Seeker</div>
+                <div class="form-tab" data-tab="client">I'm a Client</div>
+            </div>
+            
+            <div class="form-content active" id="jobseeker-form">
+                <form id="jobseeker-signup">
+                    <div class="form-group">
+                        <label for="js-name">Full Name</label>
+                        <input type="text" id="js-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="js-email">Email Address</label>
+                        <input type="email" id="js-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="js-location">Your Location</label>
+                        <input type="text" id="js-location" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="js-skills">Skills (comma separated)</label>
+                        <input type="text" id="js-skills" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="js-hourly-rate">Hourly Rate ($)</label>
+                        <input type="number" id="js-hourly-rate" min="0" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="js-availability">Availability</label>
+                        <select id="js-availability" required>
+                            <option value="">Select availability</option>
+                            <option value="Full-time">Full-time</option>
+                            <option value="Part-time">Part-time</option>
+                            <option value="Weekends">Weekends only</option>
+                            <option value="Evenings">Evenings only</option>
+                        </select>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="js-bio">Short Bio</label>
+                        <textarea id="js-bio" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Create Profile</button>
+                </form>
+            </div>
+            
+            <div class="form-content" id="client-form">
+                <form id="client-signup">
+                    <div class="form-group">
+                        <label for="c-name">Full Name / Company Name</label>
+                        <input type="text" id="c-name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="c-email">Email Address</label>
+                        <input type="email" id="c-email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="c-location">Your Location</label>
+                        <input type="text" id="c-location" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="c-company">Company Type</label>
+                        <input type="text" id="c-company">
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="c-needs">What type of help do you need?</label>
+                        <textarea id="c-needs" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn">Create Client Account</button>
+                </form>
+            </div>
+        </div>
+    </section>
+ -->
+    <!-- Login Modal -->
+    <div class="modal" id="login-modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Login Required</h2>
+            <p>You need to sign up or log in to search for talent.</p>
+            <div class="modal-buttons">
+                <a href="login.html" class="btn">Login</a>
+                <a href="signup.html" class="btn btn-accent">Sign Up</a>
+            </div>
+        </div>
     </div>
-    <div class="nav-actions">
-      <a href="#login" class="btn-outline">Sign In</a>
-      <a href="#getstarted" class="btn btn-primary">Get Started</a>
-    </div>
-  </nav>
+    <!-- Login Modal End -->
 
-  <!-- Hero Section -->
-  <section class="hero" id="home">
-    <h1>Connect with <span class="highlight">Part-Time</span> Talent</h1>
-    <p>
-      The premier platform for discovering exceptional part-time job seekers 
-      and flexible opportunities. Build your dream team with skilled professionals 
-      ready to work on your schedule.
-    </p>
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HireHub</h3>
+                    <p>Connecting businesses with talented part-time professionals.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Hire Talent</a></li>
+                        <li><a href="how-it-works.html">How it Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Resources</h3>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Blog</a></li>
+                        <li><a href="#">FAQ</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Connect With Us</h3>
+                    <ul>
+                        <li><a href="#"><i class="fab fa-facebook"></i> Facebook</a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i> Twitter</a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i> Instagram</a></li>
+                        <li><a href="#"><i class="fab fa-linkedin"></i> LinkedIn</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HireHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer -->
 
-    <!-- Professional Search Bar -->
-    <div class="search-bar">
-      <div class="search-field">
-        <i class="fas fa-briefcase"></i>
-        <input type="text" placeholder="Search jobs or skills...">
-      </div>
-      <div class="search-field">
-        <i class="fas fa-map-marker-alt"></i>
-        <input type="text" placeholder="Location">
-      </div>
-      <button class="search-btn"><i class="fas fa-search"></i> Search</button>
-    </div>
-
-    <!-- CTA Buttons -->
-    <div class="cta-buttons">
-      <a href="#jobbers" class="cta-btn cta-blue"><i class="fas fa-user-friends"></i> Find Part-Time Talent</a>
-      <a href="#jobs" class="cta-btn cta-gray"><i class="fas fa-briefcase"></i> Browse Part-Time Jobs</a>
-    </div>
-  </section>
-
-  <!-- Sections -->
-  <section id="jobs">
-    <h2>Find Jobs</h2>
-    <p>Explore available part-time opportunities tailored to your skills.</p>
-  </section>
-
-  <section id="jobbers">
-    <h2>Find Jobbers</h2>
-    <p>Hire skilled part-time workers who match your business needs.</p>
-  </section>
-
-  <section id="post">
-    <h2>Post a Job</h2>
-    <p>Reach thousands of job seekers by posting your job today.</p>
-  </section>
-
-  <section id="how">
-    <h2>How It Works</h2>
-    <p>Simple steps to connect talent with opportunities.</p>
-  </section>
-
-  <section id="about">
-    <h2>About Us</h2>
-    <p>We are a platform built to help connect employers and part-time seekers.</p>
-  </section>
-
-  <section id="login">
-    <h2>Login</h2>
-    <form>
-      <input type="email" placeholder="Email" required><br><br>
-      <input type="password" placeholder="Password" required><br><br>
-      <button class="btn btn-primary" type="submit">Login</button>
-    </form>
-  </section>
-
+    <script src="index.js"></script>
 </body>
 </html>
