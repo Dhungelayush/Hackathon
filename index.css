@@ -529,12 +529,21 @@ footer {
     .hero-text h1 {
         font-size: 2.5rem;
     }
-    
-    .search-form {
-        flex-direction: column;
+
+    /* Sections */
+    section {
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      padding: 40px;
+      text-align: center;
     }
-    
-    .modal-buttons {
-        flex-direction: column;
-    }
-}
+
+    #jobs { background: #dbeafe; }
+    #jobbers { background: #bbf7d0; }
+    #post { background: #fde68a; }
+    #how { background: #f9a8d4; }
+    #about { background: #fef3c7; }
+    #login { background: #e0e7ff; }
