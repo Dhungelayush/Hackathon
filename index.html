@@ -18,8 +18,8 @@
                  
                     <li><a href="index.html">HOME</a></li>
                     <li><a href="jobs.html">HIRE TALENT</a></li>
-                    <li><a href="how-it-works.html">HOW IT WORKS</a></li>
-                    <li><a href="about.html">ABOUT US</a></li>
+                    <li><a href="#how-it-works">HOW IT WORKS</a></li>
+                    <li><a href="#about-info">ABOUT US</a></li>
                 </ul>
                 <div class="auth-buttons">
                     <a href="login.html" class="login-btn">Login</a>
@@ -35,10 +35,10 @@
         <div class="container">
             <div class="head-content">
                 <div class="head-text">
-                    <h1>Connect with <em>HireHub</em> Talent</h1>
+                   <h1>Connect with <em>HireHub</em> Talent</h1>
                     <p>The premier platform for discovering exceptional part-time job seekers and flexible opportunities. Build your dream team with skilled professionals ready to work on your schedule.</p>
                     <div class="head-buttons">
-                        <a href="#jobber-form" class="btn">Find Part-Time Talent</a>
+                        <a href="jobs.html" class="btn">Find Part-Time Talent</a>
                         <a href="signup.html" class="btn btn-accent">Sign Up Now</a>
                     </div>
                 </div>
@@ -51,8 +51,9 @@
     <!-- Headline Section End -->
 
     <!-- How It Works -->
-    <section class="how-it-works" id="how-it-works">
+    <section id="how-it-works">
         <div class="container">
+
             <h2 class="section-title">How It Works</h2>
             <p class="section-subtitle">Simple steps to find the perfect part-time match for your business needs</p>
             
@@ -83,167 +84,25 @@
             </div>
         </div>
     </section>
+    <!-- How It Works End -->
 
     <!-- Job Listings -->
-    <section class="job-listings" id="job-listings">
-        <div class="container">
-            <h2 class="section-title">Find Local Talent</h2>
-            <p class="section-subtitle">Browse through skilled part-time professionals in your area</p>
-            
-            <div class="search-box">
-                <div class="search-form">
-                    <input type="text" placeholder="Search by skill or keyword..." id="search-input">
-                    <input type="text" placeholder="Enter your location..." id="location-input">
-                    <button class="btn" id="search-btn">Search</button>
-                </div>
-            </div>
-            
-            <div class="job-cards" id="job-cards-container">
-                <!-- Sample job cards for demonstration -->
-                <div class="job-card">
-                    <div class="job-card-header">
-                        <h3>Sarah Johnson</h3>
-                        <p>Web Design, Graphic Design, UI/UX</p>
-                    </div>
-                    <div class="job-card-body">
-                        <div class="job-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kathmandu</span>
-                        </div>
-                        <div class="job-detail">
-                            <i class="fas fa-clock"></i>
-                            <span>Part-time</span>
-                        </div>
-                        <div class="job-detail">
-                            <i class="fas fa-star"></i>
-                            <span>Creative designer with 5+ years of experience</span>
-                        </div>
-                    </div>
-                    <div class="job-card-footer">
-                        <div class="price">RS.2.5K/hr</div>
-                        <button class="btn request-btn">Request</button>
-                    </div>
-                </div>
-                
-                <div class="job-card">
-                    <div class="job-card-header">
-                        <h3>Raj Sharma</h3>
-                        <p>JavaScript, React, Node.js</p>
-                    </div>
-                    <div class="job-card-body">
-                        <div class="job-detail">
-                            <i class="fas fa-map-marker-alt"></i>
-                            <span>Kathmandu</span>
-                        </div>
-                        <div class="job-detail">
-                            <i class="fas fa-clock"></i>
-                            <span>Full-time</span>
-                        </div>
-                        <div class="job-detail">
-                            <i class="fas fa-star"></i>
-                            <span>Full-stack developer specializing in modern JavaScript applications</span>
-                        </div>
-                    </div>
-                    <div class="job-card-footer">
-                        <div class="price">RS.3K/hr</div>
-                        <button class="btn request-btn">Request</button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
 
-    <!-- Signup Forms
-    <section class="signup-forms" id="jobber-form">
+    <!-- About us -->
+    <section id="about-info">
         <div class="container">
-            <h2 class="section-title">Join HireHub</h2>
-            <p class="section-subtitle">Choose your role and create your profile to get started</p>
-            
-            <div class="form-tabs">
-                <div class="form-tab active" data-tab="jobseeker">I'm a Job Seeker</div>
-                <div class="form-tab" data-tab="client">I'm a Client</div>
-            </div>
-            
-            <div class="form-content active" id="jobseeker-form">
-                <form id="jobseeker-signup">
-                    <div class="form-group">
-                        <label for="js-name">Full Name</label>
-                        <input type="text" id="js-name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="js-email">Email Address</label>
-                        <input type="email" id="js-email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="js-location">Your Location</label>
-                        <input type="text" id="js-location" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="js-skills">Skills (comma separated)</label>
-                        <input type="text" id="js-skills" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="js-hourly-rate">Hourly Rate ($)</label>
-                        <input type="number" id="js-hourly-rate" min="0" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="js-availability">Availability</label>
-                        <select id="js-availability" required>
-                            <option value="">Select availability</option>
-                            <option value="Full-time">Full-time</option>
-                            <option value="Part-time">Part-time</option>
-                            <option value="Weekends">Weekends only</option>
-                            <option value="Evenings">Evenings only</option>
-                        </select>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="js-bio">Short Bio</label>
-                        <textarea id="js-bio" rows="4" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Create Profile</button>
-                </form>
-            </div>
-            
-            <div class="form-content" id="client-form">
-                <form id="client-signup">
-                    <div class="form-group">
-                        <label for="c-name">Full Name / Company Name</label>
-                        <input type="text" id="c-name" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="c-email">Email Address</label>
-                        <input type="email" id="c-email" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="c-location">Your Location</label>
-                        <input type="text" id="c-location" required>
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="c-company">Company Type</label>
-                        <input type="text" id="c-company">
-                    </div>
-                    
-                    <div class="form-group">
-                        <label for="c-needs">What type of help do you need?</label>
-                        <textarea id="c-needs" rows="4" required></textarea>
-                    </div>
-                    
-                    <button type="submit" class="btn">Create Client Account</button>
-                </form>
-            </div>
+            <h2 class="section-title">About us</h2>
+            <p class="section-subtitle">HireHub</p>
         </div>
-    </section>
- -->
+        <div>
+          <h3 class="aex">
+            We are ODYSSEY from Birtamode here with a simple
+            example website to present you this website
+            we have created <em>HIRE-HUB</em> with the little work of our!, Here in HireHub
+            you can Hire an experience indivisul or find a job thats suitable for you!!! Part-Time Job Finder is a web-based platform that connects job seekers with part-time employment opportunities. It allows job seekers to search and filter jobs by location, category, or pay scale while enabling employers to post and manage job listings. The platform provides easy profile creation, application tracking, and a responsive interface. Its main goal is to make finding and hiring part-time workers simple, fast, and efficient
+          </h3>
+        </div>
+    <!-- About us END -->
     <!-- Login Modal -->
     <div class="modal" id="login-modal">
         <div class="modal-content">

@@ -22,19 +22,16 @@ body {
     background-color: #f5f7ff;
     color: var(--dark);
     line-height: 1.6;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
 }
 
 .container {
     width: 90%;
-    max-width: 1200px;
+    max-width: 1000px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
-/* Header */
+
 header {
     background: white;
     box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
@@ -80,114 +77,138 @@ nav {
     background-color: var(--light);
 }
 
-
+/* Main Content */
 main {
-    flex: 1;
     padding: 2rem 0;
 }
 
-.signup-container {
-    max-width: 1000px;
-    margin: 0 auto;
+.request-container {
     background: white;
     border-radius: 10px;
     box-shadow: 0 5px 25px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+}
+
+.request-header {
     padding: 2rem;
-    margin-top: 2rem;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
+    color: white;
 }
 
-.signup-header {
-    text-align: center;
-    margin-bottom: 2rem;
-}
-
-.signup-header h1 {
-    color: var(--secondary);
+.request-header h1 {
     margin-bottom: 0.5rem;
     font-size: 2.2rem;
 }
 
-.signup-header p {
-    color: var(--gray);
-    font-size: 1.1rem;
+.request-header p {
+    opacity: 0.9;
 }
 
 
-.account-type-selector {
+.talent-summary {
+    padding: 1.5rem 2rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.talent-info-card {
     display: flex;
+    align-items: center;
     gap: 1.5rem;
-    margin-bottom: 2rem;
 }
 
-.type-card {
+.talent-image {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.talent-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.talent-details {
     flex: 1;
-    padding: 1.5rem;
-    border: 2px solid var(--light-gray);
-    border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s;
 }
 
-.type-card:hover {
-    border-color: var(--primary);
-    transform: translateY(-3px);
-}
-
-.type-card.active {
-    border-color: var(--primary);
-    background-color: rgba(67, 97, 238, 0.05);
-}
-
-.type-icon {
-    font-size: 2.2rem;
-    color: var(--primary);
-    margin-bottom: 1rem;
-}
-
-.type-card h3 {
-    margin-bottom: 0.5rem;
+.talent-details h3 {
     color: var(--secondary);
+    margin-bottom: 0.25rem;
 }
 
-.type-card p {
+.skills {
+    color: var(--primary);
+    font-weight: 500;
+    margin-bottom: 0.75rem;
+}
+
+.talent-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.meta-item {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: var(--gray);
     font-size: 0.9rem;
 }
 
-/* Forms */
-.signup-form {
-    display: none;
+.meta-item i {
+    color: var(--primary);
 }
 
-.signup-form.active {
-    display: block;
+.talent-price {
+    text-align: right;
 }
 
-.signup-form h2 {
+.hourly-rate {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+
+.request-form-container {
+    padding: 2rem;
+}
+
+.form-section {
+    margin-bottom: 2.5rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 1px solid var(--light-gray);
+}
+
+.form-section:last-of-type {
+    border-bottom: none;
+    margin-bottom: 1.5rem;
+}
+
+.form-section h3 {
     color: var(--secondary);
     margin-bottom: 1.5rem;
-    text-align: center;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
 }
 
 .form-row {
     display: flex;
-    gap: 1rem;
+    gap: 1.5rem;
     margin-bottom: 1rem;
 }
 
 .form-group {
     flex: 1;
-    margin-bottom: 1.2rem;
+    margin-bottom: 1.5rem;
 }
 
 .form-group label {
     display: block;
     margin-bottom: 0.5rem;
     font-weight: 500;
-    color: var(--dark);
-    font-size: 0.95rem;
 }
 
 .form-group input,
@@ -209,36 +230,37 @@ main {
     box-shadow: 0 0 0 3px rgba(67, 97, 238, 0.1);
 }
 
-.checkbox-group {
+.fixed-rate {
     display: flex;
     align-items: center;
-    margin: 1.5rem 0;
+    gap: 0.5rem;
+    padding: 0.85rem;
+    background-color: var(--light);
+    border-radius: 6px;
+    font-weight: 700;
+    color: var(--accent);
+    font-size: 1.1rem;
 }
 
-.checkbox-group input {
-    width: auto;
-    margin-right: 0.5rem;
+.fixed-badge {
+    background: var(--success);
+    color: white;
+    padding: 0.25rem 0.5rem;
+    border-radius: 4px;
+    font-size: 0.7rem;
+    font-weight: 600;
 }
 
-.checkbox-group label {
-    margin-bottom: 0;
-    font-weight: normal;
-}
-
-.checkbox-group a {
-    color: var(--primary);
-    text-decoration: none;
-}
-
-.checkbox-group a:hover {
-    text-decoration: underline;
+.form-actions {
+    display: flex;
+    gap: 1rem;
+    justify-content: flex-end;
+    margin-top: 2rem;
 }
 
 .btn {
     display: inline-block;
     padding: 0.75rem 1.5rem;
-    background: var(--primary);
-    color: white;
     border-radius: 6px;
     text-decoration: none;
     font-weight: 600;
@@ -246,34 +268,30 @@ main {
     border: none;
     cursor: pointer;
     font-size: 1rem;
-    width: 100%;
 }
 
 .btn:hover {
-    background: var(--secondary);
     transform: translateY(-2px);
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
 .btn-primary {
     background: var(--primary);
+    color: white;
 }
 
-.login-redirect {
-    text-align: center;
-    margin-top: 2rem;
-    padding-top: 1.5rem;
-    border-top: 1px solid var(--light-gray);
+.btn-primary:hover {
+    background: var(--secondary);
 }
 
-.login-redirect a {
+.btn-secondary {
+    background: white;
     color: var(--primary);
-    text-decoration: none;
-    font-weight: 500;
+    border: 1px solid var(--primary);
 }
 
-.login-redirect a:hover {
-    text-decoration: underline;
+.btn-secondary:hover {
+    background: var(--light);
 }
 
 /* Success Popup */
@@ -333,7 +351,7 @@ footer {
     background: var(--secondary);
     color: white;
     padding: 3rem 0 1.5rem;
-    margin-top: 2rem;
+    margin-top: 3rem;
 }
 
 .footer-content {
@@ -377,8 +395,18 @@ footer {
 
 
 @media (max-width: 768px) {
-    .account-type-selector {
+    .talent-info-card {
         flex-direction: column;
+        text-align: center;
+        gap: 1rem;
+    }
+    
+    .talent-meta {
+        justify-content: center;
+    }
+    
+    .talent-price {
+        text-align: center;
     }
     
     .form-row {
@@ -386,12 +414,12 @@ footer {
         gap: 0;
     }
     
+    .form-actions {
+        flex-direction: column;
+    }
+    
     .footer-content {
         flex-direction: column;
         gap: 2rem;
-    }
-    
-    .signup-container {
-        padding: 1.5rem;
     }
 }

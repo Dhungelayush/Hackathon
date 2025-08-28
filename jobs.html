@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hire Talents - HireHub</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="jobs.css">
+</head>
+<body>
+ 
+    <header>
+        <div class="container">
+            <nav>
+                <a href="index.html" class="logo">Hire<span>Hub</span></a>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="jobs.html" class="active">Hire Talent</a></li>
+                    <li><a href="how-it-works.html">How it Works</a></li>
+                    <li><a href="about.html">About</a></li>
+                </ul>
+                <div class="auth-buttons">
+                    <a href="login.html" class="login-btn">Login</a>
+                    <a href="signup.html" class="btn">Sign Up</a>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+ 
+    <main>
+        <div class="container">
+            <div class="page-header">
+                <h1>Find Local Talent</h1>
+                <p>Discover skilled part-time professionals in your area</p>
+            </div>
+
+          
+            <section class="search-section">
+                <div class="search-card">
+                    <h2>Search for Talent</h2>
+                    <p>Find the perfect part-time professional for your needs</p>
+                    
+                    <form class="search-form" id="search-form">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="skill-search">What skills are you looking for?</label>
+                                <input type="text" id="skill-search" placeholder="e.g. Web Design, Content Writing">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="location-search">Where?</label>
+                                <input type="text" id="location-search" placeholder="Enter your location">
+                            </div>
+                        </div>
+                        
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-search"></i> Search
+                            </button>
+                            <button type="button" id="use-my-location" class="btn btn-secondary">
+                                <i class="fas fa-location-arrow"></i> Use My Location
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+        
+            <section class="results-section">
+                <div class="results-header">
+                    <h2>Available Talent</h2>
+                    <div class="results-count">
+                        <span id="results-count">0</span> professionals found
+                    </div>
+                </div>
+
+                <div class="filters">
+                    <div class="filter-group">
+                        <label for="sort-by">Sort by:</label>
+                        <select id="sort-by">
+                            <option value="relevance">Relevance</option>
+                            <option value="rate-low">Hourly Rate (Low to High)</option>
+                            <option value="rate-high">Hourly Rate (High to Low)</option>
+                            <option value="experience">Experience Level</option>
+                            <option value="rating">Rating</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="availability">Availability:</label>
+                        <select id="availability">
+                            <option value="all">All</option>
+                            <option value="full-time">Full-time</option>
+                            <option value="part-time">Part-time</option>
+                            <option value="weekends">Weekends</option>
+                            <option value="evenings">Evenings</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="job-cards" id="job-cards-container">
+                    
+                </div>
+
+                <div class="no-results" id="no-results" style="display: none;">
+                    <i class="fas fa-search"></i>
+                    <h3>No professionals found</h3>
+                    <p>Try adjusting your search criteria or location</p>
+                    <button class="btn btn-secondary" id="broaden-search">Broaden Search</button>
+                </div>
+            </section>
+        </div>
+    </main>
+
+   
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-column">
+                    <h3>HireHub</h3>
+                    <p>Connecting businesses with talented part-time professionals.</p>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="jobs.html">Find Jobs</a></li>
+                        <li><a href="how-it-works.html">How it Works</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-column">
+                    <h3>Legal</h3>
+                    <ul>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Cookie Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HireHub. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="jobs.js"></script>
+</body>
+</html>

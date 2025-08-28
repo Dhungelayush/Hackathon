@@ -1,4 +1,4 @@
-// DOM Elements
+//ODYSSEY
 const typeCards = document.querySelectorAll('.type-card');
 const jobseekerForm = document.getElementById('jobseeker-form');
 const clientForm = document.getElementById('client-form');
@@ -7,16 +7,16 @@ const clientSignupForm = document.getElementById('client-signup');
 const successPopup = document.getElementById('success-popup');
 const popupOkBtn = document.getElementById('popup-ok-btn');
 
-// Account Type Selection
+
 typeCards.forEach(card => {
     card.addEventListener('click', () => {
-        // Remove selected class from all cards
+        
         typeCards.forEach(c => c.classList.remove('selected'));
         
-        // Add selected class to clicked card
+        
         card.classList.add('selected');
         
-        // Show the appropriate form
+        
         const accountType = card.getAttribute('data-type');
         if (accountType === 'jobseeker') {
             jobseekerForm.classList.add('active');
@@ -28,11 +28,11 @@ typeCards.forEach(card => {
     });
 });
 
-// Form Validation and Submission
+
 jobseekerSignupForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Basic validation
+   
     const name = document.getElementById('js-name').value;
     const email = document.getElementById('js-email').value;
     const password = document.getElementById('js-password').value;
@@ -60,7 +60,7 @@ jobseekerSignupForm.addEventListener('submit', function(e) {
         return;
     }
     
-    // In a real application, you would send this data to a server
+    
     const formData = {
         name,
         email,
@@ -76,14 +76,14 @@ jobseekerSignupForm.addEventListener('submit', function(e) {
     
     console.log('Job Seeker Form Data:', formData);
     
-    // Show success popup
+    
     showSuccessPopup();
 });
 
 clientSignupForm.addEventListener('submit', function(e) {
     e.preventDefault();
     
-    // Basic validation
+    
     const name = document.getElementById('c-name').value;
     const email = document.getElementById('c-email').value;
     const password = document.getElementById('c-password').value;
@@ -107,7 +107,7 @@ clientSignupForm.addEventListener('submit', function(e) {
         return;
     }
     
-    // In a real application, you would send this data to a server
+    
     const formData = {
         name,
         email,
@@ -121,24 +121,30 @@ clientSignupForm.addEventListener('submit', function(e) {
     
     console.log('Client Form Data:', formData);
     
-    // Show success popup
+    
     showSuccessPopup();
 });
 
-// Show success popup
+
 function showSuccessPopup() {
     successPopup.style.display = 'flex';
 }
-
-// Redirect to jobs page when OK button is clicked
 popupOkBtn.addEventListener('click', function() {
-    // In a real application, you would redirect to the jobs page
-    // For this demo, we'll use a simple alert
-    alert('Redirecting to Find Jobs page...');
-    // window.location.href = 'jobs.html';
+    
+    successPopup.style.display = 'none';
+    
+    
+    window.location.href = 'index.html';
 });
 
-// Initialize the page with jobseeker form selected by default
+
+popupOkBtn.addEventListener('click', function() {
+  
+    alert('Redirecting to Find Jobs page...');
+   
+});
+
+
 document.addEventListener('DOMContentLoaded', function() {
     typeCards[0].classList.add('selected');
     jobseekerForm.classList.add('active');

@@ -1,4 +1,4 @@
-/* Base Styles */
+
 * {
     margin: 0;
     padding: 0;
@@ -36,7 +36,7 @@ body {
     max-width: 1200px;
 }
 
-/* Login Wrapper */
+
 .login-wrapper {
     display: flex;
     background: white;
@@ -63,7 +63,7 @@ body {
     justify-content: center;
 }
 
-/* Logo */
+
 .logo {
     font-size: 1.8rem;
     font-weight: 700;
@@ -77,7 +77,7 @@ body {
     color: var(--accent);
 }
 
-/* Login Content */
+
 .login-content {
     flex: 1;
     display: flex;
@@ -99,7 +99,7 @@ body {
     margin-bottom: 2rem;
 }
 
-/* Forms */
+
 .form-group {
     margin-bottom: 1.5rem;
 }
@@ -141,7 +141,7 @@ body {
     text-decoration: underline;
 }
 
-/* Buttons */
+
 .btn {
     display: block;
     width: 100%;
@@ -167,7 +167,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Divider */
+
 .divider {
     display: flex;
     align-items: center;
@@ -187,7 +187,7 @@ body {
     font-size: 0.9rem;
 }
 
-/* Google Button */
+
 .btn-google {
     background: white;
     color: var(--dark);
@@ -204,7 +204,7 @@ body {
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
 }
 
-/* Signup Link */
+
 .signup-link {
     text-align: center;
     margin-top: 1.5rem;
@@ -221,7 +221,7 @@ body {
     text-decoration: underline;
 }
 
-/* Login Right Side */
+
 .login-hero {
     max-width: 400px;
 }
@@ -260,7 +260,7 @@ body {
     justify-content: center;
 }
 
-/* Form Validation Styles */
+
 .form-group.error input {
     border-color: #dc3545;
 }
@@ -280,13 +280,13 @@ body {
     display: block;
 }
 
-/* Google Sign In Button Customization */
+
 .g_id_signin {
     width: 100% !important;
     margin-top: 1rem;
 }
 
-/* Responsive Design */
+
 @media (max-width: 900px) {
     .login-right {
         display: none;
@@ -311,7 +311,7 @@ body {
     }
 }
 
-/* Loading Animation */
+
 .loading {
     display: inline-block;
     width: 20px;
