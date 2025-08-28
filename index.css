@@ -528,7 +528,7 @@ footer {
     
     .hero-text h1 {
         font-size: 2.5rem;
-    }
+    } }
 
     /* Sections */
     section {
@@ -547,3 +547,4 @@ footer {
     #how { background: #f9a8d4; }
     #about { background: #fef3c7; }
     #login { background: #e0e7ff; }
+  
